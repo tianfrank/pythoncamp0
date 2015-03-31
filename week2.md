@@ -23,3 +23,22 @@ Event handler
 always use local variable  
 敲了这两个的Example, 感觉实在地学到了点东西
 
+# 3月31日折腾日记
+## simple GUI + Buttons  
+### simple GUI  
+a frame is the whole user interface frame  
+**Program Structure**  
+Globals (State)  
+Helper functions  
+Classes (later)  
+Define event handlers  
+Create a frame  
+Register event handlers  
+Start frame & timers  
+
+**BUTTONS**  
+
+print "" 空一行  
+frame.add_button("Print", output, 100)  100 is the width  
+frame.add_button(text, button_handler, width)
+  
