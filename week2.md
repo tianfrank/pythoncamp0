@@ -42,3 +42,39 @@ print "" 空一行
 frame.add_button("Print", output, 100)  100 is the width  
 frame.add_button(text, button_handler, width)
   
+
+# 4月1日折腾日记  
+## Input fields + Guess the number version1  
+### GTN 1. code  
+####  
+
+import simplegui  
+import random  
+import math  
+
+secret_number = 0  
+
+def new_game():  
+    global secret_number    
+    secret_number = random.randint(0, 100)      
+    pass    
+def input_guess(inp):    
+    input = int(inp)    
+    if input > secret_number:  
+        print "Lower"  
+    if input < secret_number:  
+        print "Higher"  
+    if input == secret_number:  
+        print "Correct"  
+    print "Guess was", input    
+    pass    
+    f = simplegui.create_frame("Guess the number", 200, 200)  
+
+
+
+f.add_input("Enter a guess", input_guess, 200)  
+
+
+new_game()
+
+
